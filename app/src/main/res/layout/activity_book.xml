@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="506dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="67dp"
+        tools:context=".Book" />
+
+    <TextView
+        android:id="@+id/fare"
+        android:layout_width="238dp"
+        android:layout_height="46dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:text="TOTAL FARE:"
+        android:textAppearance="@android:style/TextAppearance.Large" />
+
+    <Button
+        android:id="@+id/fbook"
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="clickbook"
+        android:text="BOOK  RIDE" />
+
+    <Button
+        android:id="@+id/gobtn"
+        android:layout_width="72dp"
+        android:layout_height="37dp"
+        android:layout_above="@+id/map"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="-67dp"
+        android:onClick="ongo"
+        android:text="GO" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="28dp"
+        android:text="FROM:"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/gobtn"
+        android:layout_alignEnd="@+id/textView12"
+        android:text="TO:"
+        android:textSize="22sp" />
+
+    <fragment
+        android:id="@+id/place_autocomplete_fragment2"
+        android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+        android:layout_width="257dp"
+        android:layout_height="29dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="28dp"
+        android:layout_toEndOf="@+id/textView12"
+        android:textSize="22sp" />
+
+    <fragment
+        android:id="@+id/place_autocomplete_fragment"
+        android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+        android:layout_width="247dp"
+        android:layout_height="37dp"
+        android:layout_above="@+id/map"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="-67dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Enter Drop Location.." />
+
+    <TextView
+        android:id="@+id/ridedistance"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@+id/fbook"
+        android:layout_alignParentStart="true"
+        android:text="Ride distance ="
+        android:textAppearance="@android:style/TextAppearance.Medium" />
+
+
+</RelativeLayout>

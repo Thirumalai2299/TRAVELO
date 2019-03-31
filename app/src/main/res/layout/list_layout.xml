@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="265dp"
+        app:layout_constraintBottom_toBottomOf="@+id/droptxt"
+        app:layout_constraintTop_toBottomOf="@+id/droptxt">
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="83dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Pickedup Location:"
+            app:layout_constraintBottom_toTopOf="@+id/textView35"
+            app:layout_constraintEnd_toStartOf="@+id/picktxt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="83dp"
+            android:layout_height="46dp"
+            android:layout_marginBottom="26dp"
+            android:layout_marginEnd="27dp"
+            android:layout_marginStart="16dp"
+            android:text="Droped Location:"
+            app:layout_constraintBottom_toTopOf="@+id/textView37"
+            app:layout_constraintEnd_toStartOf="@+id/droptxt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="87dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="33dp"
+            android:layout_marginStart="16dp"
+            android:text="Ride Distance:"
+            app:layout_constraintBottom_toTopOf="@+id/textView38"
+            app:layout_constraintEnd_toStartOf="@+id/ridedisttxt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="94dp"
+            android:layout_height="36dp"
+            android:layout_marginBottom="17dp"
+            android:layout_marginEnd="23dp"
+            android:layout_marginStart="16dp"
+            android:text="Ride Fare:"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/ridefaretxt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+        <TextView
+            android:id="@+id/picktxt"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="23dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/droptxt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView34"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/droptxt"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="23dp"
+            android:layout_marginEnd="27dp"
+            app:layout_constraintBottom_toTopOf="@+id/ridedisttxt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView35"
+            app:layout_constraintTop_toBottomOf="@+id/picktxt" />
+
+        <TextView
+            android:id="@+id/ridedisttxt"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginEnd="21dp"
+            app:layout_constraintBottom_toTopOf="@+id/ridefaretxt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView37"
+            app:layout_constraintTop_toBottomOf="@+id/droptxt" />
+
+        <TextView
+            android:id="@+id/ridefaretxt"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="17dp"
+            android:layout_marginEnd="55dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView38"
+            app:layout_constraintTop_toBottomOf="@+id/ridedisttxt" />
+
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>

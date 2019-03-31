@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".confirm"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="45dp"
+        android:text="BOOKING CONFIRMATION!!!"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="101dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="92dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="93dp"
+        android:text="PICKUP LOCATION :"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        app:layout_constraintBottom_toTopOf="@+id/ridediscon"
+        app:layout_constraintEnd_toStartOf="@+id/pickcon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/pickcon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="14dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginTop="8dp"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        app:layout_constraintBottom_toTopOf="@+id/textView14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="94dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="69dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="68dp"
+        android:text="DROP LOCATION :"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        app:layout_constraintBottom_toBottomOf="@+id/textView20"
+        app:layout_constraintEnd_toStartOf="@+id/dropcon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/dropcon"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="166dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginTop="166dp"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView14"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="92dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="62dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="63dp"
+        android:text="RIDE DISTANCE :"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        app:layout_constraintBottom_toBottomOf="@+id/ridefarecon"
+        app:layout_constraintEnd_toStartOf="@+id/ridediscon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/dropcon" />
+
+    <TextView
+        android:id="@+id/ridediscon"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="69dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginTop="68dp"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        app:layout_constraintBottom_toBottomOf="@+id/textView23"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView20"
+        app:layout_constraintTop_toTopOf="@+id/dropcon" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="28dp"
+        android:text="RIDE            FARE :"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        app:layout_constraintBaseline_toBaselineOf="@+id/ridefarecon"
+        app:layout_constraintEnd_toStartOf="@+id/ridefarecon"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/ridefarecon"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="35dp"
+        android:layout_marginEnd="111dp"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        app:layout_constraintBottom_toTopOf="@+id/bookcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView23" />
+
+    <Button
+        android:id="@+id/bookcon"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_marginStart="76dp"
+        android:onClick="bookconfirm"
+        android:text="BOOK"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_marginBottom="45dp"
+        android:layout_marginEnd="93dp"
+        android:onClick="oncancel"
+        android:text="CANCEL"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</android.support.constraint.ConstraintLayout>

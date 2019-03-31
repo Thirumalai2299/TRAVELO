@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "428155659100",
+    "firebase_url": "https://travelo-42f7e.firebaseio.com",
+    "project_id": "travelo-42f7e",
+    "storage_bucket": "travelo-42f7e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:428155659100:android:3422be6f9e054a5b",
+        "android_client_info": {
+          "package_name": "com.example.saranya.thirumalai"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "428155659100-tg78nipsra26i74gfgm3ujd5t9q46nhj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.saranya.thirumalai",
+            "certificate_hash": "dfa0a486503064626877524f6bade49010568f7c"
+          }
+        },
+        {
+          "client_id": "428155659100-mi066tjoe2balvsuus06ejo0aa3nksi5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAC5XdG7flO6fNVcbuHbBwSF0OB_NZcTas"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "428155659100-mi066tjoe2balvsuus06ejo0aa3nksi5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
